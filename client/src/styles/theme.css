@@ -1,0 +1,60 @@
+/*
+ * PROJECT THEME — the only file you edit to change how this app looks.
+ *
+ * Every value is a space-separated R G B channel triplet: no commas, no '#'.
+ * Convert the hex you want:  #f59e0b -> 245 158 11.
+ *
+ * Tailwind maps each variable below to a semantic utility, so bg-primary,
+ * text-muted-foreground, border-border and opacity modifiers like bg-primary/10
+ * all follow from these values. Rewrite the VALUES to give this project its own
+ * identity. Do not rename or delete a variable.
+ *
+ * For an app that should look dark, set these root values to dark colours
+ * (e.g. --background: 2 6 23; --foreground: 241 245 249). Do NOT add `dark:`
+ * variants unless the brief asks for a user-togglable light/dark switch.
+ *
+ * You may also add plain @keyframes rules to this file. Do not use @layer or
+ * @apply here.
+ */
+:root {
+  /* Corner radius for the whole app. 0 = square, 0.5rem = subtle,
+     0.75rem = default, 1.25rem = soft/rounded. */
+  --radius: 0.75rem;
+
+  /* Page background and body text */
+  --background: 255 255 255;
+  --foreground: 15 23 42;
+
+  /* Cards, panels, modal bodies, form controls */
+  --card: 255 255 255;
+  --card-foreground: 15 23 42;
+
+  /* De-emphasised surfaces and text: hover fills, captions, placeholders */
+  --muted: 241 245 249;
+  --muted-foreground: 100 116 139;
+
+  /* Brand colour — primary buttons, active states, focus ring */
+  --primary: 79 70 229;
+  --primary-foreground: 255 255 255;
+
+  /* Neutral action — Cancel buttons, secondary chips */
+  --secondary: 241 245 249;
+  --secondary-foreground: 15 23 42;
+
+  /* Soft brand tint — icon chips, active nav item, highlighted row */
+  --accent: 238 242 255;
+  --accent-foreground: 55 48 163;
+
+  /* Destructive — delete buttons, form errors */
+  --destructive: 220 38 38;
+  --destructive-foreground: 255 255 255;
+
+  /* Status accents (used by <Alert variant="success" | "warning" />) */
+  --success: 22 163 74;
+  --warning: 217 119 6;
+
+  /* Lines and focus */
+  --border: 226 232 240;   /* dividers, card borders */
+  --input: 203 213 225;    /* form control borders */
+  --ring: 79 70 229;       /* focus ring */
+}
